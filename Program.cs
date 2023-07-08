@@ -27,18 +27,18 @@ void mas(int m, int n)
 }
 void arif(int m, int n)
 {
-Console.Write("Среднее арифметическое каждого столбца: ");
-int i,j;
-Random rand = new Random();
-for (j = 0; j < n; j++)
-{
-double sum = 0;
-for (i = 0; i < m; i++)
-{
-sum = sum + randomArray[i,j];
-}
-Console.Write($"{sum/(i):F1}; ");
-}
+    Console.Write("Среднее арифметическое каждого столбца: ");
+    int i,j;
+    Random rand = new Random();
+    for (j = 0; j < n; j++)
+    {
+        double sum = 0;
+        for (i = 0; i < m; i++)
+        {
+            sum = sum + randomArray[i,j];
+        }
+        Console.Write($"{sum/(i):F1}; ");
+    }
 }
 mas(m,n);
 arif(m,n);
